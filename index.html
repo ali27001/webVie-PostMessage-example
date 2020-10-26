@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b>React Native Webview Post Message Exmaple </b>
+<p>Web To > react native </p>
+
+<script>
+    let sendMessageToNative = () =>{ //react native'e url gönderir. Bu androidde gezinmeler algılanmadıgı için
+        let url = window.location.href
+        window.ReactNativeWebView && window.ReactNativeWebView.postMessage("Selam mobile uygulama", '*')
+    }
+     sendMessageToNative()
+</script>
+</body>
+</html>
